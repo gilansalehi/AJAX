@@ -3,3 +3,10 @@
 <% else %>
   <%= button_to "Follow", user_follow_url(user), method: :post %>
 <% end %>
+
+<button class="follow-toggle"
+        name="button"
+        data-userid="<%= user.id %>"
+        data-follow-state="<%= current_user.follows?(user) %>">
+</button>
+<br>
