@@ -33,6 +33,7 @@ class UsersController < ApplicationController
   end
 
   def search
+    
     if params[:query].present?
       @users = User.where("username ~ ?", params[:query])
     else

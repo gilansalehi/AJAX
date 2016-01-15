@@ -42,7 +42,6 @@ FollowToggle.prototype.handleClick = function (e) {
 
     // $button = $(e.currentTarget);
     // var data = $button.serializeJSON();
-    debugger
 
     $.ajax({
       type: "DELETE",
